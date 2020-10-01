@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('font/css/all.css') }}" rel="stylesheet"> <!--load all styles -->
 </head>
 <body>
@@ -25,6 +25,6 @@
     @include('includes.footer')
 </body>
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}" defer></script>
+<script src="{{ secure_asset('js/app.js') }}" defer></script>
 
 </html>
