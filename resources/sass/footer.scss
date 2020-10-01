@@ -1,0 +1,47 @@
+//Footer Styles
+footer{
+    text-align: justify;
+    padding:2rem 15px;
+    margin-top: 2rem;
+    margin-right: -15px;
+    margin-left: -15px;
+    background:#34497e;
+    color: white;
+
+    div{
+        li{
+            list-style: none;
+            a{
+                color: inherit;
+            }
+        }
+    }
+
+    .text-highlight{
+        a{
+            color: white;
+            border: 1px solid #3490dc;
+            border-radius: 15px;
+            padding: 2px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+}
+
+@media screen and(min-width:577px){
+
+    footer{
+        margin-top: 4rem;
+        padding: 1rem 5rem;
+
+        h5{
+            font-size: 2rem;
+        }
+
+        div li{
+            margin-bottom: 0.8rem;
+        }
+    }
+}
