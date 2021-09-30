@@ -1,0 +1,9 @@
+.login{
+    height: 90vh;
+    padding-top: 25vh;
+}
+@media screen and (max-width: 480px){
+    .login{
+        padding-top: 15vh;
+    }
+}

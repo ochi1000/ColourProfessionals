@@ -1,0 +1,53 @@
+.sidebar{
+    min-height: 100vh;
+}
+
+.form-group{
+    .form-row{
+        margin-bottom: 1rem;
+    }
+}
+
+.includes{
+    .form-control{
+        height: 1.7rem;
+    }
+}
+
+.descriptionTitle{
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: grey;
+}
+
+.p-margin{
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.signatory{
+    border-bottom: solid;
+}
+.thanksTitle{
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: grey;
+    background-color: #f1eeee;
+}
+
+.main{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+// @media (max-width: 768px){
+//     .d-md-block {
+//         display: block !important;
+//     }
+//     .col-md-2{
+//         width: 50%;
+//     }
+// }

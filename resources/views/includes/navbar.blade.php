@@ -21,11 +21,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/products&services">Products & Services</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="/gallery">Colour Gallery</a>
+                <a class="nav-link" href="https://wa.me/2349068919746?text= Hello, what products and services do you offer">Products & Services</a>
             </li>
 
             <li class="nav-item">
@@ -33,7 +29,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/quotation">Get a quotation</a>
+                <a class="nav-link" href="https://wa.me/2349068919746?text=Hello, I'm intrested in the price of your products">Get a quotation</a>
             </li>
 
             <li class="nav-item">
