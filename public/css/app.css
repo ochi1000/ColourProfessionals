@@ -80,10 +80,16 @@ section {
   display: block;
 }
 
+.logo{
+  height: 6rem;
+  width: 10rem;
+}
+
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 0.9rem;
+  max-width: 100% !important;
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
@@ -4515,6 +4521,7 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background-color: #dededc !important;
 }
 
 .navbar .container,
@@ -4854,7 +4861,9 @@ input[type=button].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  font-weight: bold;
+  color: #313d53;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
