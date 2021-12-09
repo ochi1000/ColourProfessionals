@@ -14,13 +14,13 @@ class CreateQuotationsTable extends Migration
     public function up()
     {
         Schema::create('quotations', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->integer('quotation_number');
             $table->string('name')->nullable();
-            $table->string('user_phone')->nullable();
+            $table->string('phone')->nullable();
             $table->string('address')->nullable();
-            $table->integer('upfront');
-            $table->integer('total');
+            $table->integer('upfront')->nullable();
+            $table->integer('total')->nullable();
             $table->integer('wall_treatment_price')->nullable();
             $table->integer('labour_price')->nullable();
             $table->integer('design_price')->nullable();

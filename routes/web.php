@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\QuotationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +19,7 @@ Route::get('/', function () {
     return view('home');
 });
 
+
 Route::get('/products&services', function () {
     return view('productsnservices');
 });
@@ -25,38 +28,16 @@ Route::get('/about-us', function () {
     return view('aboutus');
 });
 
-Route::get('/discover', function () {
-    return view('discover');
-});
-
 Route::get('/quotation', function () {
     return view('quotation');
 });
 
+Auth::routes();
 
-// Auth::routes();
+Route::middleware(['auth','admin'])->group(function () {
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    // Quotation Routes
+    Route::resource('quotations', QuotationController::class);
 
-// Route::get('/admin', function () {
-//     return view('auth.login');
-// });
-
-// Route::get('/admin/dashboard', function () {
-//     return view('admin.dashboard');
-// });
-
-// Route::get('/admin/quotation', function () {
-//     return view('admin.quotation');
-// });
-
-// Route::get('/admin/quotation/print', function () {
-//     return view('admin.quotationPrintout');
-// });
-
-// Route::post('/admin/quotation/create', 'App\Http\Controllers\AdminController@createQuotation');
-// // Route::post('/admin/quotation/create', [AdminController::class, 'createQuotation']);
-
-// Route::redirect('/register','/');
-
-
+});

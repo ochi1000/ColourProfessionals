@@ -16,7 +16,8 @@
             <div class="product-images container">
                 <div class="">
                     <div>
-                        <h2 class="head-title">Do More With ColourPro</h2>
+                        <!-- <h2 class="head-title">Do More With ColourPro</h2> -->
+                        <h2 class="head-title">Plan Your walls With Colour-Pro</h2>
                     </div>
                     <p>At ColourPro we simulate the final look of your space, giving you the power of choice. 
                     
@@ -39,7 +40,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                         -->
+                    </div> -->
                     <!-- <a href="/products" class="btn btn-outline-primary">See more</a> -->
                 </div>
             </div>
