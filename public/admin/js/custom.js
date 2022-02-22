@@ -31,5 +31,10 @@ $(function() {
     };
     $(window).ready(setsidebartype);
     $(window).on("resize", setsidebartype);
-
+    
+    // Table Filter
+    $('#tableSearch').DataTable({
+        "aaSorting": [[1,'asc']],
+        dom: 'Bfrtip'
+    });
 });

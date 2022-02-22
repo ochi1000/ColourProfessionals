@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+/* @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8"; */
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
@@ -81,7 +81,6 @@ section {
 }
 
 .logo{
-  height: 6rem;
   width: 10rem;
 }
 
@@ -4521,7 +4520,6 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: #dededc !important;
 }
 
 .navbar .container,

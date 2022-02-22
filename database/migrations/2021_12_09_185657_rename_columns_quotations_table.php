@@ -20,7 +20,6 @@ class RenameColumnsQuotationsTable extends Migration
             $table->string('number_of_paint6_buckets')->nullable();
             $table->string('unitPriceOfPaint5')->nullable();
             $table->string('unitPriceOfPaint6')->nullable();
-
             
         });
     }

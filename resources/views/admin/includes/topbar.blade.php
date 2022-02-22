@@ -8,14 +8,8 @@
                         <!-- Logo icon -->
                         <b class="logo-icon">
                             <!-- Dark Logo icon -->
-                            <img src="{{asset('admin/plugins/images/logo-icon.png')}}" alt="homepage" />
+                            <img class="logo" src="{{asset('images/colourpro_logo.png')}}" alt="homepage" />
                         </b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
-                        <span class="logo-text">
-                            <!-- dark Logo text -->
-                            <img src="{{asset('admin/plugins/images/logo-text.png')}}" alt="homepage" />
-                        </span>
                     </a>
                     <!-- ============================================================== -->
                     <!-- End Logo -->
@@ -40,20 +34,15 @@
                         <!-- Search -->
                         <!-- ============================================================== -->
                         <li class=" in">
-                            <form role="search" class="app-search d-none d-md-block me-3">
-                                <input type="text" placeholder="Search..." class="form-control mt-0">
-                                <a href="" class="active">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                            </form>
+                            
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
                         <li>
-                            <a class="profile-pic" href="#">
-                                <img src="{{asset('admin/plugins/images/users/varun.jpg')}}" alt="user-img" width="36"
-                                    class="img-circle"><span class="text-white font-medium">Admin</span></a>
+                            <a class="profile-pic">
+                                <img src="{{asset('images/icon.jpg')}}" alt="user-img" width="36" height="36"
+                                    class="img-circle"><span class="text-dark font-medium">Admin</span></a>
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->

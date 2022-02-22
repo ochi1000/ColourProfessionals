@@ -8,3 +8,11 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.white-box{
+  padding: 19px !important;
+}
+
+.logo{
+  width: 10rem;
+}

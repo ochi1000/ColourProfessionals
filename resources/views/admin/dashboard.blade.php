@@ -31,7 +31,7 @@
                         <li>
                            
                         </li>
-                        <li class="ms-auto"><span class="counter text-success">659</span></li>
+                        <li class="ms-auto"><span class="counter text-success">₦{{number_format($totalEarnings)}}</span></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +42,9 @@
                         <li>
                             
                         </li>
-                        <li class="ms-auto"><span class="counter text-success">659</span></li>
+                        <li class="ms-auto"><span class="counter text-success">
+                            {{number_format($completedTransactionsCount)}}
+                        </span></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +55,7 @@
                         <li>
                             
                         </li>
-                        <li class="ms-auto"><span class="counter text-purple">869</span></li>
+                        <li class="ms-auto"><span class="counter text-purple">{{number_format($ongoingTransactions)}}</span></li>
                     </ul>
                 </div>
             </div>
@@ -66,7 +68,7 @@
                                     style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                             </div>
                         </li>
-                        <li class="ms-auto"><span class="counter text-info">911</span>
+                        <li class="ms-auto"><span class="counter text-info">{{number_format($totalBucketsSold)}} <small>Buckets</small></span>
                         </li>
                     </ul>
                 </div>
@@ -78,16 +80,17 @@
         <!-- ============================================================== -->
         <div class="white-box">
         <h3 class="box-title">Quotations and Receipts</h3>
-        <br>
         <div class="row">
             <div class="col-sm-2"></div>
-            <div class="col-sm-7"><input placeholder="Search For Reference Number" type="number" class="form-control" ></div>
+            <div class="col-sm-7">
+                <!-- <input id="search" name="search" placeholder="Search For Reference Number" type="text" class="form-control"> -->
+            </div>
             <div class="col-sm-3 d-flex justify-content-end"><a href="{{ route('quotations.create') }}" class="btn btn-primary">Add Quotation</a></div>
         </div>
         <br>
         <div class="row">
             <div class="col-sm-12">
-                    <div class="table-responsive">
+                <div class="table-responsive">
                         <table class="table table-striped table-hover text-nowrap">
                             <thead>
                                 <tr>
@@ -100,54 +103,30 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($quotations as $quotation)
                                 <tr>
-                                    <td>1</td>
-                                    <td>Deshmukh</td>
-                                    <td>Prohaska</td>
-                                    <td>₦1,000,000</td>
-                                    <td>admin</td>
-                                    <td>admin</td>
+                                    <td>{{$quotation->quotation_number}}</td>
+                                    <td>{{$quotation->name}}</td>
+                                    <td>{{number_format($quotation->paidAmount)}}</td>
+                                    <td>{{number_format($quotation->total)}}</td>
+                                    <td>{{$quotation->created_at}}</td>
+                                    <td>
+                                        <span ><a href="{{route('quotations.edit',$quotation->id)}}" class="fas fa-edit"></a> </span>
+                                        <span >
+                                            <a style="color: black;" class="fas fa-print"></a> 
+                                        </span>
+                                        <!-- <form action="{{route('quotations.destroy',$quotation->id)}}" method="POST">
+                                            @csrf
+                                            {{ method_field('DELETE') }} -->
+                                            <span >
+                                                <a style="color: red;" class="fas fa-trash"></a> 
+                                            </span>
+                                        <!-- </form> -->
+
+                                    </td>
+                                    
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Deshmukh</td>
-                                    <td>Gaylord</td>
-                                    <td>₦1,000,000</td>
-                                    <td>member</td>
-                                    <td>member</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Sanghani</td>
-                                    <td>Gusikowski</td>
-                                    <td>₦1,000,000</td>
-                                    <td>developer</td>
-                                    <td>developer</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Roshan</td>
-                                    <td>Rogahn</td>
-                                    <td>₦1,000,000</td>
-                                    <td>supporter</td>
-                                    <td>supporter</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Joshi</td>
-                                    <td>Hickle</td>
-                                    <td>₦1,000,000</td>
-                                    <td>member</td>
-                                    <td>member</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Nigam</td>
-                                    <td>Eichmann</td>
-                                    <td>₦1,000,000</td>
-                                    <td>supporter</td>
-                                    <td>supporter</td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

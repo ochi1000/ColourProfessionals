@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light  shadow-sm">
     <a class="navbar-brand mx-auto psguy-logo" href="{{ url('/') }}">
-    <img class="logo" src="images/logo1.jpg" alt="">
+    <img class="logo" src="images/colourpro_logo.png" alt="">
         <!-- Colour Professionals -->
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

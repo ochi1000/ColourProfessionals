@@ -35,7 +35,7 @@
                 @csrf
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="Full Name">Full Name</label>
+                        <label for="Full Name">Full Name *</label>
                         <input type="text" required name="name" placeholder="Full Name" class="form-control" >
                     </div>
                     <div class="form-group col-md-6">
@@ -45,17 +45,17 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="Address">Address</label>
+                        <label for="Address">Address *</label>
                         <input type="text" required name="address" placeholder="Address" class="form-control" >
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="Phone">Phone</label>
+                        <label for="Phone">Phone *</label>
                         <input type="number" required name="phone" placeholder="Phone" class="form-control" >
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <label for="Description of Work">Description of Work</label>
+                        <label for="Description of Work">Description of Work *</label>
                         <input type="text" required name="description" placeholder="Description" class="form-control" >
                     </div>
                 </div>
@@ -106,15 +106,15 @@
 
                 <div class="row">
                     <div class="form-group col-md-4">
-                        <label for="exampleFormControlSelect1">Product 1 (Required)</label>
+                        <label for="exampleFormControlSelect1">Product 1 *</label>
                         <input class="form-control" type="text" name="paint1" placeholder="Product 1" required>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="Phone">Quantity</label>
+                        <label for="Phone">Quantity *</label>
                         <input required type="number" name="number_of_paint1_buckets" placeholder="Quantity" class="form-control" >
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="Phone">Unit Price</label>
+                        <label for="Phone">Unit Price *</label>
                         <input required type="number" name="unitPriceOfPaint1" placeholder="Unit Price" class="form-control" >
                     </div>
                 </div>

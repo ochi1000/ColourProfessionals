@@ -5,19 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Dashboard</title>
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
-
-    {{-- Favicon --}}
-    <link rel="shortcut icon" type="image/png" href="/favicon.png">
-
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('font/css/all.css') }}" rel="stylesheet"> <!--load all styles -->
+    
   </head>
 
   <body class="bg-white">
@@ -52,7 +44,7 @@
                 <p class="p-margin" style="font-size:1rem;font-weight: bold;">Description of Work</p>
             </div>
             <div class="col-3">
-                <p class="p-margin" style="ont-size:1rem; font-weight: bold;">Amount(₦)</p>
+                <p class="p-margin" style="font-size:1rem; font-weight: bold;">Amount(₦)</p>
             </div>
         </section>
 
@@ -116,7 +108,7 @@
                 <p class="signatory text-center" style="margin-bottom: 0.2rem">Engr. Jideofor Tochukwu</p>
                 <p class="text-center">General Manager</p>
             </div>
-            <div class="col-4">
+            <div class="col-2">
                 {{-- <p class="signatory text-center" style="margin-bottom: 0.2rem">Engr. Jideofor Tochukwu</p>
                 <p class="text-center">General Manager</p> --}}
             </div>

@@ -5,8 +5,13 @@
 <!-- All Jquery -->
 <!-- ============================================================== -->
 <script src="{{asset('admin/plugins/bower_components/jquery/dist/jquery.min.js')}}"></script>
+<!-- DataTabes Jquery -->
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+
 <!-- Bootstrap tether Core JavaScript -->
 <script src="{{asset('admin/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
 <script src="{{asset('admin/js/app-style-switcher.js')}}"></script>
 <script src="{{asset('admin/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
 <!--Wave Effects -->
