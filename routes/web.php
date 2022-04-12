@@ -48,3 +48,7 @@ Route::middleware(['auth','admin'])->group(function () {
     Route::get('quotations/print/{id}', [QuotationController::class, 'print']);
 
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
